@@ -1,0 +1,80 @@
+//<ПЕРЕМЕННЫЕ>==========================================================================================================
+$minWidth: 320;
+$maxWidth: 1440;
+$maxWidthContainer: 1160;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$bgColor: #FFFFFF;
+$mainColor: #1F2041;
+$purpleColor: #BC9CFF;
+$greenColor: #6FCF97;
+
+$fontFamily: "Montserrat";
+$fontSize: 16;
+
+//<ОБНУЛЕНИЯ>===========================================================================================================
+@import '/src/assets/scss/utils/null.scss';
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: $fontSize + px;
+  background-color: $bgColor;
+  color: $mainColor;
+  font-family: $fontFamily;
+}
+
+//<ШРИФТЫ>==============================================================================================================
+@import '/src/assets/scss/utils/fonts.scss';
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+//<ОБОЛОЧКА>============================================================================================================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+//<ОСНОВНАЯ СЕТКА>======================================================================================================
+.container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: $md1 + px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2 + px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3 + px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
