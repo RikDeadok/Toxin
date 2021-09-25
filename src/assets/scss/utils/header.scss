@@ -1,0 +1,121 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  &__wrapper {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: $bgColor;
+  }
+  &__container {
+
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    min-height: 70px;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    flex: 0 0 380/1160 * 100%;
+  }
+  &__menu {
+
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+}
+.menu {
+  flex: 0 1 450px;
+  &__body {
+
+  }
+  &__list {
+    @media (min-width: $md3+px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    position: relative;
+    @media (any-hover: hover) {
+      &:hover {
+        .menu__sub-list {
+          transform: translate(0px, 0px);
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+        ._icon-arrow {
+          transform: rotate(-180deg);
+        }
+        ._icon-arrow,
+        .menu__link {
+          color: $purpleColor;
+        }
+      }
+    }
+  }
+  &__link {
+    font-size: 14px;
+    font-weight: 400;
+    color: inherit;
+    transition: color 0.3s ease 0s;
+  }
+  ._icon-arrow {
+    transition: all 0.3s ease 0s;
+  }
+  &__sub-list {
+    position: relative;
+    padding: 15px;
+    flex: 1 1 100%;
+    @media (min-width: $md3+px) {
+      opacity: 0;
+      transition: all 0.3s ease 0s;
+      transform: translate(0px, 10px);
+      visibility: hidden;
+      min-width: 200px;
+      left: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 100%;
+    }
+  }
+  &__sub-item {
+    &:not(:last-child) {
+      margin: 0px 0px 5px 0px;
+    }
+  }
+  &__sub-link {
+    line-height: 120%;
+  }
+}
+.actions {
+  &__btn {
+    border: solid 2px $purpleColor;
+    border-radius: 1.375em;
+    padding: 5px;
+    font-size: 0.75em;
+  }
+  ._btn-outlined {
+    color: $purpleColor;
+  }
+  ._btn-filled {
+    background-color: $purpleColor;
+    color: $bgColor;
+  }
+}

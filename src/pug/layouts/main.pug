@@ -9,7 +9,6 @@ html(lang='en')
         meta(name="description", content=description)
         title #{title}
     body
-        .container
-            include ../includes/modules/header
-            block content
-            include ../includes/modules/footer
+        include ../includes/modules/header
+        block content
+        include ../includes/modules/footer

@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'icons';
+  src: url('/src/assets/fonts/MaterialIcons-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+%ic {
+  font-family: 'icons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+[class^="_icon-"],
+[class*=" _icon-"] {
+  &:before {
+    @extend %ic;
+    display: block;
+  }
+}
+//<ИКОНКИ>===================================================================================================
+._icon-arrow:before {
+  content: "\e5cf";
+}

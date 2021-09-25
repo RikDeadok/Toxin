@@ -19,8 +19,6 @@ $fontSize: 16;
 @import '/src/assets/scss/utils/null.scss';
 html,
 body {
-  height: 100%;
-  line-height: 1;
   font-size: $fontSize + px;
   background-color: $bgColor;
   color: $mainColor;
@@ -29,6 +27,7 @@ body {
 
 //<ШРИФТЫ>==============================================================================================================
 @import '/src/assets/scss/utils/fonts.scss';
+@import '/src/assets/scss/utils/icons.scss';
 h1 {
   font-weight: 700;
   font-size: 24px;
@@ -64,17 +63,9 @@ p {
   flex: 1 0 auto;
 }
 //<ОСНОВНАЯ СЕТКА>======================================================================================================
-.container {
+._container {
   max-width: $maxWidthContainer + px;
+  padding: 0 15px;
   margin: 0 auto;
-  @media (max-width: $md1 + px) {
-    max-width: 970px;
-  }
-  @media (max-width: $md2 + px) {
-    max-width: 750px;
-  }
-  @media (max-width: $md3 + px) {
-    max-width: none;
-    padding: 0 10px;
-  }
 }
+@import '/src/assets/scss/utils/header.scss';

@@ -11,7 +11,7 @@
 
 ``` bash
 # Download repository:
-git clone ...
+git clone git@github.com:RikDeadok/Toxin.git
 
 # Go to the app:
 cd metalamp.toxin
