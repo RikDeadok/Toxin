@@ -1,0 +1,32 @@
+.footer {
+  flex: 0 0 auto;
+
+  &__wrapper {
+    border-top: rgba($mainColor, 25%) 1px solid;
+  }
+  &__container {
+
+  }
+  &__body {
+    display: flex;
+    padding: 100px 0;
+    min-height: 372px;
+  }
+  &__logo {
+    display: flex;
+    flex: 0 0 300/1160 * 100%;
+    flex-direction: column;
+  }
+  &__menu {
+
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    min-height: 70px;
+  }
+}
+.menu {
+
+}

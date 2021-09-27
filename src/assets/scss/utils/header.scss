@@ -26,15 +26,13 @@
     flex: 0 0 380/1160 * 100%;
   }
   &__menu {
-
+    flex: 0 1 450px;
   }
   &__actions {
-    display: flex;
-    align-items: center;
+    flex: 0 1 325px;
   }
 }
 .menu {
-  flex: 0 1 450px;
   &__body {
 
   }
@@ -71,9 +69,7 @@
     }
   }
   &__link {
-    font-size: 14px;
-    font-weight: 400;
-    color: inherit;
+    color: rgba($mainColor, 50%);
     transition: color 0.3s ease 0s;
   }
   ._icon-arrow {
@@ -81,6 +77,7 @@
   }
   &__sub-list {
     position: relative;
+    background: $bgColor;
     padding: 15px;
     flex: 1 1 100%;
     @media (min-width: $md3+px) {
@@ -92,7 +89,7 @@
       left: 0;
       pointer-events: none;
       position: absolute;
-      top: 100%;
+      top: 180%;
     }
   }
   &__sub-item {
@@ -105,17 +102,32 @@
   }
 }
 .actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   &__btn {
     border: solid 2px $purpleColor;
-    border-radius: 1.375em;
-    padding: 5px;
-    font-size: 0.75em;
+    border-radius: 22px;
+    font-size: 12px;
+    padding: 7px 18px;
+    cursor: pointer;
   }
   ._btn-outlined {
+
+  }
+  ._btn-outlined a {
     color: $purpleColor;
+    font-weight: 700;
+    line-height: 15px;
+    text-transform: uppercase;
   }
   ._btn-filled {
-    background-color: $purpleColor;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }
+  ._btn-filled a {
     color: $bgColor;
+    font-weight: 700;
+    line-height: 15px;
+    text-transform: uppercase;
   }
 }

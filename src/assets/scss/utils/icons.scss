@@ -1,6 +1,13 @@
 @font-face {
   font-family: 'icons';
-  src: url('/src/assets/fonts/MaterialIcons-Regular.woff2') format('woff2');
+  src: url('/src/assets/fonts/MaterialIcons-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'icons';
+  src: url('/src/assets/fonts/FontAwesomeIcons-Brands.woff2');
   font-weight: 400;
   font-style: normal;
   font-display: block;
@@ -20,7 +27,16 @@
     display: block;
   }
 }
-//<ИКОНКИ>===================================================================================================
+//<ИКОНКИ>==============================================================================================================
 ._icon-arrow:before {
   content: "\e5cf";
+}
+._icon-twitter:before {
+  content: "\f099";
+}
+._icon-facebook:before {
+  content: "\f082";
+}
+._icon-instagram:before {
+  content: "\f16d";
 }
