@@ -2,11 +2,50 @@ footer.footer
     .footer__wrapper
         .footer__container._container
             .footer__body
-                .footer__logo
-                    a(href='/')
-                        img(src='/assets/img/logo.svg' alt='logo')
-                    p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-                .footer__menu.menu
+                .footer__main
+                    .footer__logo
+                        a(href='/')
+                            img(src='/assets/img/logo.svg' alt='logo')
+                    .footer__text
+                        p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+                .footer__menu.menu-footer
+                    .menu-footer__column
+                        h3 Навигация
+                        ul.menu-footer__list
+                            li.menu-footer__item
+                                a(href='/').menu-footer__link О нас
+                            li.menu-footer__item
+                                a(href='/').menu-footer__link Новости
+                            li.menu-footer__item
+                                a(href='/').menu-footer__link Служба поддержки
+                            li.menu-footer__item
+                                a(href='/').menu-footer__link Услуги
+                    .menu-footer__column
+                        h3 О нас
+                        ul.menu-footer__list
+                            li.menu-footer__item
+                                a(href='/').menu-footer__link О сервисе
+                            li.menu-footer__item
+                                a(href='/').menu-footer__link Наша команда
+                            li.menu-footer__item
+                                a(href='/').menu-footer__link Вакансии
+                            li.menu-footer__item
+                                a(href='/').menu-footer__link Инвесторы
+                    .menu-footer__column
+                        h3 Служба поддержки
+                        ul.menu-footer__list
+                            li.menu-footer__item
+                                a(href='/').menu-footer__link Соглашения
+                            li.menu-footer__item
+                                a(href='/').menu-footer__link Сообщества
+                            li.menu-footer__item
+                                a(href='/').menu-footer__link Связь с нами
+                .footer__subscribe.subscribe
+                    h3 Подписка
+                    p Получайте специальные предложения и новости сервиса
+                    form(action="#").subscribe__form
+                        input(type="text" autocomplite="off" name="form" placeholder="Email").subscribe__input
+                        button().subscribe__button
     .footer__wrapper
         .footer__container._container
             .footer__title

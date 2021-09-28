@@ -8,14 +8,22 @@
 
   }
   &__body {
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px 1fr 260px;
+    column-gap: 40px;
     padding: 100px 0;
     min-height: 372px;
   }
-  &__logo {
+  &__main {
     display: flex;
-    flex: 0 0 300/1160 * 100%;
     flex-direction: column;
+    align-items: flex-start;
+  }
+  &__logo {
+
+  }
+  &__text {
+
   }
   &__menu {
 
@@ -27,6 +35,22 @@
     min-height: 70px;
   }
 }
-.menu {
+.menu-footer {
+  @media (min-width: $md3+px) {
+    display: flex;
+  }
+  &__column {
+    @media (min-width: $md3+px) {
+      flex: 0 1 33.333%;
+    }
+  }
+  &__list {
 
+  }
+  &__item {
+
+  }
+  &__link {
+
+  }
 }
