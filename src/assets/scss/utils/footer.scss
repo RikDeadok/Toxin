@@ -23,12 +23,12 @@
 
   }
   &__text {
-
+    margin: 20px 0;
   }
   &__menu {
 
   }
-  &__title {
+  &__social {
     display: flex;
     align-items: center;
     padding: 20px 0;
@@ -44,13 +44,57 @@
       flex: 0 1 33.333%;
     }
   }
+  &__title {
+    margin-top: 5px;
+    margin-bottom: 21px;
+  }
   &__list {
 
   }
   &__item {
-
+      &:not(:last-child) {
+        margin: 0 0 20px 0;
+      }
   }
   &__link {
-
+    color: rgba($mainColor, 50%);
+    line-height: 120%;
+    transition: color 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $purpleColor;
+      }
+    }
+  }
+}
+.subscribe {
+  &__form {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    min-width: 260px;
+    min-height: 44px;
+    border: rgba($mainColor, 25%) 1px solid;
+    border-radius: 4px;
+  }
+  &__input {
+    width: 100%;
+    padding-left: 15px;
+    color: rgba($mainColor, 50%);
+    outline: none;
+  }
+  &__form:focus, &__form:hover {
+    box-shadow: 0 0 40px $purpleColor;
+  }
+  &__button {
+    flex: 0 0 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: $bgColor;
+    color: $purpleColor;
+    cursor: pointer;
   }
 }

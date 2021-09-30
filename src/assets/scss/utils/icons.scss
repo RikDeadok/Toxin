@@ -18,7 +18,6 @@
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
 }
 [class^="_icon-"],
 [class*=" _icon-"] {
@@ -30,6 +29,9 @@
 //<ИКОНКИ>==============================================================================================================
 ._icon-arrow:before {
   content: "\e5cf";
+}
+._icon-arrow-forward:before {
+  content: "\e5c8";
 }
 ._icon-twitter:before {
   content: "\f099";
