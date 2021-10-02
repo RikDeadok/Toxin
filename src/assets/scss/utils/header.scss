@@ -130,4 +130,9 @@
     line-height: 15px;
     text-transform: uppercase;
   }
+  &__auth {
+    border-left: solid 1px rgba($mainColor, 10%);
+    padding-left: 20px;
+    color: rgba($mainColor, 50%);
+  }
 }

@@ -4,7 +4,7 @@ header.header
             .header__body
                 .header__main
                     a(href='/')
-                        img(src='/assets/img/logo.svg' alt='logo')
+                        img(src='assets/img/logo.svg' alt='logo')
                 .header__menu.menu-header
                     nav.menu-header__body
                         ul.menu-header__list
@@ -35,8 +35,13 @@ header.header
                                     li.menu-header__sub-item
                                         a(href='#').menu-header__link 6
                 .header__actions.actions
-                    .actions__button._button-outlined
-                        a(href='#') Войти
-                    .actions__button._button-filled
-                        a(href='#') Зарегистрироваться
+                    - var auth = 1
+                    case auth
+                        when 0
+                            .actions__button._button-outlined
+                                a(href='#') Войти
+                            .actions__button._button-filled
+                                a(href='#') Зарегистрироваться
+                        when 1
+                            .actions__auth Константин Константинопольский
 

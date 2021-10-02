@@ -8,7 +8,7 @@ $md3: 767.98;
 $md4: 479.98;
 
 $bgColor: #FFFFFF;
-$mainColor: #1F2041;
+$mainColor: rgba(#1F2041, 75%);
 $purpleColor: #BC9CFF;
 $greenColor: #6FCF97;
 
@@ -67,5 +67,5 @@ p {
   margin: 0 auto;
 }
 //<ПОДКЛЮЧЕНИЯ>=========================================================================================================
-@import '/src/assets/scss/utils/header.scss';
-@import '/src/assets/scss/utils/footer.scss';
+@import 'src/assets/scss/utils/header.scss';
+@import 'src/assets/scss/utils/footer.scss';

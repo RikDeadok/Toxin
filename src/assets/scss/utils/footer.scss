@@ -28,11 +28,29 @@
   &__menu {
 
   }
+  &__subscribe {
+
+  }
+  &__sub-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    min-height: 70px;
+  }
+  &__copyright {
+
+  }
   &__social {
     display: flex;
     align-items: center;
-    padding: 20px 0;
-    min-height: 70px;
+    justify-content: space-between;
+    min-width: 120px;
+  }
+  &__social a {
+    font-size: 24px;
+    line-height: 1;
+    color: $purpleColor;
   }
 }
 .menu-footer {
