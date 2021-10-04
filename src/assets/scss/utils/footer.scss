@@ -100,6 +100,7 @@
     padding-left: 15px;
     color: rgba($mainColor, 50%);
     outline: none;
+    background: transparent;
   }
   &__form:focus, &__form:hover {
     box-shadow: 0 0 40px $purpleColor;
@@ -111,7 +112,7 @@
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    background-color: $bgColor;
+    background: transparent;
     color: $purpleColor;
     cursor: pointer;
   }

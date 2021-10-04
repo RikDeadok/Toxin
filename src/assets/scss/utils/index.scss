@@ -1,0 +1,12 @@
+.main_bg {
+  background: no-repeat center url("../img/main_bg.png");
+  width: $maxWidth;
+  height: 900px;
+}
+.main-section {
+  padding-top: 140px;
+  display: flex;
+}
+.main-section__title {
+  display: block;
+}

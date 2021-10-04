@@ -63,9 +63,11 @@ p {
 //<ОСНОВНАЯ СЕТКА>======================================================================================================
 ._container {
   max-width: $maxWidthContainer + px;
-  padding: 0 15px;
+  padding: 0px 15px;
   margin: 0 auto;
 }
 //<ПОДКЛЮЧЕНИЯ>=========================================================================================================
 @import 'src/assets/scss/utils/header.scss';
 @import 'src/assets/scss/utils/footer.scss';
+@import 'src/assets/scss/utils/UI_main-form.scss';
+@import 'src/assets/scss/utils/index.scss';

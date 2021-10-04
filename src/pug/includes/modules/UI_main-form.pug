@@ -1,0 +1,19 @@
+.main-form
+    form(action="#").main-form__body
+        h1.main-form__title Найдём номера под ваши пожелания
+        .main-form__item.input-group._half-item
+            label(for="mainFormArrival").input-group__label Прибытие
+            .input-group__group
+                input(type="text" name="" id="mainFormArrival" placeholder="ДД.ММ.ГГГГ").input-group__input
+                button().input-group__button._icon-arrow
+        .main-form__item.input-group._half-item
+            label(for="mainFormDeparture").input-group__label Выезд
+            .input-group__group
+                input(type="text" name="" id="mainFormDeparture" placeholder="ДД.ММ.ГГГГ").input-group__input
+                button().input-group__button._icon-arrow
+        .main-form__item.input-group
+            label(for="mainFormGuests").input-group__label Гости
+            .input-group__group
+                input(type="text" name="" id="mainFormGuests" placeholder="Сколько гостей").input-group__input
+                button().input-group__button._icon-arrow
+        button(type="submit" class="main-form__button") Подобрать номер

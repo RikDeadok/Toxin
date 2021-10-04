@@ -5,8 +5,10 @@ block variables
     - var description = "toxin description"
 
 block content
-    section.wrapper
+    .wrapper
         .content
-            .mainbg
+            .main_bg
                 ._container
-                h1 hello world
+                    section.main-section
+                        include ../includes/modules/UI_main-form
+                        p.main-section__title Лучшие номера для вашей работы, отдыха и просто вдохновения
