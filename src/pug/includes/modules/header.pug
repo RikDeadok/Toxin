@@ -12,30 +12,30 @@ header.header
                                 a(href='#').menu-header__link О нас
                             li.menu-header__item
                                 a(href='#').menu-header__link Услуги
-                                ._icon-arrow
+                                button._icon-arrow
                                 ul.menu-header__sub-list
                                     li.menu-header__sub-item
-                                        a(href='#').menu-header__link 1
+                                        a(href='#').menu-header__sub-link Пункт меню
                                     li.menu-header__sub-item
-                                        a(href='#').menu-header__link 2
+                                        a(href='#').menu-header__sub-link Пункт меню
                                     li.menu-header__sub-item
-                                        a(href='#').menu-header__link 3
+                                        a(href='#').menu-header__sub-link Пункт меню
                             li.menu-header__item
                                 a(href='#').menu-header__link Вакансии
                             li.menu-header__item
                                 a(href='#').menu-header__link Новости
                             li.menu-header__item
                                 a(href='#').menu-header__link Соглашения
-                                ._icon-arrow
+                                button._icon-arrow
                                 ul.menu-header__sub-list
                                     li.menu-header__sub-item
-                                        a(href='#').menu-header__link 4
+                                        a(href='#').menu-header__sub-link Пункт меню
                                     li.menu-header__sub-item
-                                        a(href='#').menu-header__link 5
+                                        a(href='#').menu-header__sub-link Пункт меню
                                     li.menu-header__sub-item
-                                        a(href='#').menu-header__link 6
+                                        a(href='#').menu-header__sub-link Пункт меню
                 .header__actions.actions
-                    - var auth = 1
+                    - var auth = 0
                     case auth
                         when 0
                             .actions__button._button-outlined
@@ -44,4 +44,4 @@ header.header
                                 a(href='#') Зарегистрироваться
                         when 1
                             .actions__auth Константин Константинопольский
-
+                ._icon-burger

@@ -24,23 +24,57 @@
     display: flex;
     align-items: center;
     flex: 0 0 380/1160 * 100%;
+    position: relative;
+    z-index: 5;
   }
   &__menu {
     flex: 0 1 450px;
   }
   &__actions {
     flex: 0 1 325px;
+    position: relative;
+    z-index: 5;
   }
 }
 .menu-header {
   &__body {
-
+    @media (max-width: $md3+px) {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      top: 0;
+      left: -100%;
+      padding: 70px 15px 30px 15px;
+      background-color: $bgColor;
+      transition: left 0.3s ease 0s;
+      &::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        top: 0;
+        left: -100%;
+        transition: left 0.3s ease 0s;
+        background-color: $bgColor;
+        z-index: 2;
+      }
+      &._active {
+        left: 0;
+        &::before {
+          left: 0;
+        }
+      }
+    }
   }
   &__list {
     @media (min-width: $md3+px) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+    }
+    @media (max-width: $md3+px) {
+      line-height: 2;
     }
   }
   &__item {
@@ -71,15 +105,24 @@
   &__link {
     color: rgba($mainColor, 50%);
     transition: color 0.3s ease 0s;
+    @media (max-width: $md3+px) {
+      font-size: 20px;
+    }
   }
   ._icon-arrow {
     transition: all 0.3s ease 0s;
+    font-size: 24px;
+    color: rgba($mainColor, 50%);
+    @media (max-width: $md3+px) {
+      font-size: 40px;
+    }
   }
   &__sub-list {
     position: relative;
     background: $bgColor;
     padding: 15px;
     flex: 1 1 100%;
+    background-color: $purpleColor;
     @media (min-width: $md3+px) {
       opacity: 0;
       transition: all 0.3s ease 0s;
@@ -90,6 +133,17 @@
       pointer-events: none;
       position: absolute;
       top: 100%;
+      &._visible {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    @media (max-width: $md3+px) {
+      margin: 0px -15px;
+      display: none;
+      &._visible {
+        display: block;
+      }
     }
   }
   &__sub-item {
@@ -99,13 +153,28 @@
   }
   &__sub-link {
     line-height: 120%;
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  ._icon-burger {
+    display: none;
+    font-size: 24px;
+    width: 24px;
+    cursor: pointer;
+    color: rgba($mainColor, 50%);
+    @media (max-width: $md3+px) {
+      display: block;
+    }
   }
 }
 .actions {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   &__button {
+    margin: 0 2px;
     border: solid 2px $purpleColor;
     border-radius: 22px;
     font-size: 12px;
@@ -135,4 +204,19 @@
     padding-left: 20px;
     color: rgba($mainColor, 50%);
   }
+}
+._icon-burger {
+  position: relative;
+  z-index: 5;
+  display: none;
+  cursor: pointer;
+  @media (max-width: $md3+px) {
+    display: block;
+    font-size: 40px;
+    margin-top: 10px;
+  }
+}
+._icon-close {
+  font-size: 40px;
+  margin-top: 10px;
 }
