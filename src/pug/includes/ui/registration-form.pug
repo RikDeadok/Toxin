@@ -1,0 +1,31 @@
+form(action="#").registration-form
+    .registration-form__wrapper
+        .registration-form__container
+            .registration-form__body
+                h1.registration-form__title Регистрация аккаунта
+                .registration-form__item
+                    input(type="text" name="registrationFormName" id="registrationFormName" placeholder="Имя").registration-form__input
+                .registration-form__item
+                    input(type="text" name="registrationFormLastname" id="registrationFormLastname" placeholder="Фамилия").registration-form__input
+                .registration-form__item.radio
+                    .radio__item
+                        input(type="radio" checked value="male" id="formMale" name="male").radio__input
+                        label(for="formMale").radio__label Мужчина
+                    .radio__item
+                        input(type="radio" value="female" id="formFemale" name="male").radio__input
+                        label(for="formFemale").radio__label Женщина
+                .registration-form__item
+                    label(for="registrationFormDate").registration-form__label Дата рождения
+                    input(type="date" name="registrationFormDate" id="registrationFormDate" placeholder="ДД.ММ.ГГГГ").registration-form__input
+                .registration-form__item
+                    label(for="registrationFormEmail").registration-form__label Дата рождения
+                    input(type="email" name="registrationFormEmail" id="registrationFormEmail" placeholder="Email").registration-form__input
+                .registration-form__item
+                    input(type="password" name="registrationFormPassword" id="registrationFormPassword" placeholder="Пароль").registration-form__input
+                .registration-form__item.switch
+                    input(type="checkbox" name="registrationFormSwitch" id="registrationFormSwitch").switch__input
+                    label(for="registrationFormSwitch").switch__label Получать спецпредложения
+                button(type="submit").registration-form__button Перейти к оплате
+                .registration-form__login
+                    p Уже есть аккаунт на Toxin
+                    button(type="submit").registration-form__button Войти
