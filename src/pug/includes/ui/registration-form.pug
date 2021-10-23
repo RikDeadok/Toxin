@@ -16,16 +16,18 @@ form(action="#").registration-form
                         label(for="formFemale").radio__label Женщина
                 .registration-form__item
                     label(for="registrationFormDate").registration-form__label Дата рождения
-                    input(type="date" name="registrationFormDate" id="registrationFormDate" placeholder="ДД.ММ.ГГГГ").registration-form__input
+                    input(type="text" name="registrationFormDate" id="registrationFormDate" placeholder="ДД.ММ.ГГГГ").registration-form__input
                 .registration-form__item
-                    label(for="registrationFormEmail").registration-form__label Дата рождения
+                    label(for="registrationFormEmail").registration-form__label Данные для входа в сервис
                     input(type="email" name="registrationFormEmail" id="registrationFormEmail" placeholder="Email").registration-form__input
                 .registration-form__item
                     input(type="password" name="registrationFormPassword" id="registrationFormPassword" placeholder="Пароль").registration-form__input
                 .registration-form__item.switch
                     input(type="checkbox" name="registrationFormSwitch" id="registrationFormSwitch").switch__input
                     label(for="registrationFormSwitch").switch__label Получать спецпредложения
-                button(type="submit").registration-form__button Перейти к оплате
+                .registration-form__button
+                    button(type="submit").button._button-group Перейти к оплате
+                    ._icon-arrow-forward
                 .registration-form__login
                     p Уже есть аккаунт на Toxin
-                    button(type="submit").registration-form__button Войти
+                    button(type="submit").button._button-outlined Войти
