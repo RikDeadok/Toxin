@@ -1,0 +1,15 @@
+form(action="#").auth-form
+    .auth-form__wrapper
+        .auth-form__container
+            .auth-form__body
+                h1.auth-form__title Войти
+                .auth-form__item
+                    input(type="email" name="authFormEmail" id="authFormEmail" placeholder="Email").auth-form__input
+                .auth-form__item
+                    input(type="password" name="authFormPassword" id="authFormPassword" placeholder="Пароль").auth-form__input
+                .auth-form__button
+                    button(type="submit").button._button-group Войти
+                    ._icon-arrow-forward
+                .auth-form__login
+                    p Нет аккаунта на Toxin?
+                    button(type="submit").button._button-outlined Создать
