@@ -1,0 +1,21 @@
+form(action="#").form
+    .form__wrapper
+        .form__container
+            .form__body
+                .row
+                    h1.form__title №888
+                    span Люкс
+                    p 9 990₽ в сутки
+                .row
+                    .form__item.half-item
+                        label(for="reserveFormArrival").form__label Прибытие
+                        input(type="text" name="reserveFormArrival" id="reserveFormArrival" placeholder="ДД.ММ.ГГГГ").form__input
+                    .form__item.half-item
+                        label(for="reserveFormDeparture").form__label Выезд
+                        input(type="text" name="reserveFormDeparture" id="reserveFormDeparture" placeholder="ДД.ММ.ГГГГ").form__input
+                .form__item
+                    label(for="reserveFormGuests").form__label Гости
+                    input(type="text" name="reserveFormGuests" id="reserveFormGuests" placeholder="Сколько гостей").form__input
+                .form__button
+                    button(type="submit").button._button-group Подобрать номер
+                    ._icon-arrow-forward

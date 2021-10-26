@@ -1,18 +1,18 @@
-form(action="#").main-form
-    .main-form__wrapper
-        .main-form__container
-            .main-form__body
-                h1.main-form__title Найдём номера под ваши пожелания
+form(action="#").form
+    .form__wrapper
+        .form__container
+            .form__body
+                h1.form__title Найдём номера под ваши пожелания
                 .row
-                    .main-form__item.half-item
-                        label(for="mainFormArrival").main-form__label Прибытие
-                        input(type="text" name="mainFormArrival" id="mainFormArrival" placeholder="ДД.ММ.ГГГГ").main-form__input
-                    .main-form__item.half-item
-                        label(for="mainFormDeparture").main-form__label Выезд
-                        input(type="text" name="mainFormDeparture" id="mainFormDeparture" placeholder="ДД.ММ.ГГГГ").main-form__input
-                .main-form__item
-                    label(for="mainFormGuests").main-form__label Гости
-                    input(type="text" name="mainFormGuests" id="mainFormGuests" placeholder="Сколько гостей").main-form__input
-                .main-form__button
+                    .form__item.half-item
+                        label(for="mainFormArrival").form__label Прибытие
+                        input(type="text" name="mainFormArrival" id="mainFormArrival" placeholder="ДД.ММ.ГГГГ").form__input
+                    .form__item.half-item
+                        label(for="mainFormDeparture").form__label Выезд
+                        input(type="text" name="mainFormDeparture" id="mainFormDeparture" placeholder="ДД.ММ.ГГГГ").form__input
+                .form__item
+                    label(for="mainFormGuests").form__label Гости
+                    input(type="text" name="mainFormGuests" id="mainFormGuests" placeholder="Сколько гостей").form__input
+                .form__button
                     button(type="submit").button._button-group Подобрать номер
                     ._icon-arrow-forward

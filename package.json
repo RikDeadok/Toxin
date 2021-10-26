@@ -7,13 +7,22 @@
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
     "build": "webpack --config ./build/webpack.build.conf.js"
   },
-  "author": "Sergey Kovalenko <rikdeadok@gmail.com>",
   "keywords": [
     "webpack",
     "pug"
   ],
+  "author": "Sergey Kovalenko <rikdeadok@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rikdeadok/toxin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rikdeadok/toxin/issues"
+  },
+  "homepage": "https://github.com/rikdeadok/toxin#readme",
   "license": "ISC",
   "dependencies": {
+    "air-datepicker": "^3.0.1",
     "jquery": "^3.6.0"
   },
   "devDependencies": {

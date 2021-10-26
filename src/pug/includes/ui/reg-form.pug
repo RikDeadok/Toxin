@@ -1,33 +1,33 @@
-form(action="#").reg-form
-    .reg-form__wrapper
-        .reg-form__container
-            .reg-form__body
-                h1.reg-form__title Регистрация аккаунта
-                .reg-form__item
-                    input(type="text" name="regFormName" id="regFormName" placeholder="Имя").reg-form__input
-                .reg-form__item
-                    input(type="text" name="regFormLastname" id="regFormLastname" placeholder="Фамилия").reg-form__input
-                .reg-form__item.radio
+form(action="#").form
+    .form__wrapper
+        .form__container
+            .form__body
+                h1.form__title Регистрация аккаунта
+                .form__item
+                    input(type="text" name="regFormName" id="regFormName" placeholder="Имя").form__input
+                .form__item
+                    input(type="text" name="regFormLastname" id="regFormLastname" placeholder="Фамилия").form__input
+                .form__item.radio
                     .radio__item
                         input(type="radio" checked value="male" id="formMale" name="male").radio__input
                         label(for="formMale").radio__label Мужчина
                     .radio__item
                         input(type="radio" value="female" id="formFemale" name="male").radio__input
                         label(for="formFemale").radio__label Женщина
-                .reg-form__item
-                    label(for="regFormDate").reg-form__label Дата рождения
-                    input(type="text" name="regFormDate" id="regFormDate" placeholder="ДД.ММ.ГГГГ").reg-form__input
-                .reg-form__item
-                    label(for="regFormEmail").reg-form__label Данные для входа в сервис
-                    input(type="email" name="regFormEmail" id="regFormEmail" placeholder="Email").reg-form__input
-                .reg-form__item
-                    input(type="password" name="regFormPassword" id="regFormPassword" placeholder="Пароль").reg-form__input
-                .reg-form__item.switch
+                .form__item
+                    label(for="regFormDate").form__label Дата рождения
+                    input(type="text" name="regFormDate" id="regFormDate" placeholder="ДД.ММ.ГГГГ").form__input
+                .form__item
+                    label(for="regFormEmail").form__label Данные для входа в сервис
+                    input(type="email" name="regFormEmail" id="regFormEmail" placeholder="Email").form__input
+                .form__item
+                    input(type="password" name="regFormPassword" id="regFormPassword" placeholder="Пароль").form__input
+                .form__item.switch
                     input(type="checkbox" name="regFormSwitch" id="regFormSwitch").switch__input
                     label(for="regFormSwitch").switch__label Получать спецпредложения
-                .reg-form__button
+                .form__button
                     button(type="submit").button._button-group Перейти к оплате
                     ._icon-arrow-forward
-                .reg-form__login
+                .form__login
                     p Уже есть аккаунт на Toxin
                     button(type="submit").button._button-outlined Войти

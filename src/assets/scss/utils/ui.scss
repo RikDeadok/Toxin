@@ -2,7 +2,7 @@
 .radio {
   display: flex;
   flex-direction: row;
-  padding: 10px 0 0 0;
+  margin-bottom: 20px;
   &__item {
     margin: 0 auto 0 0;
   }
@@ -50,7 +50,7 @@
 .switch {
   display: flex;
   flex-direction: row;
-  padding: 5px 0 0 0;
+  margin-bottom: 20px;
   &__input {
     display: none;
   }
@@ -100,7 +100,7 @@
 .checkbox {
   display: flex;
   flex-direction: row;
-  padding: 10px 0 0 0;
+  margin-bottom: 20px;
   &__input {
     display: none;
   }
