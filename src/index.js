@@ -1,2 +1,5 @@
+import 'jquery/dist/jquery'
+import 'air-datepicker/air-datepicker.css'
+import 'air-datepicker/air-datepicker.js'
 import './assets/js/main.js'
 import './assets/scss/main.scss'
