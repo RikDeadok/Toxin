@@ -10,23 +10,53 @@
   }
   &__props {
     display: flex;
+    align-items: center;
   }
-  &__title{
-
+  &__title {
+    color: $mainColor;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  &__title span {
+    font-size: 19px;
   }
   &__category {
-
+    color: $purpleColor;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
   }
   &__cost {
-
+    margin-left: auto;
+    color: rgba($mainColor, 50%);
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  &__cost span {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
   }
   &__reviews {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 19px;
   }
   &__rating {
-
+    display: flex;
+    font-size: 24px;
+    color: $purpleColor;
   }
   &__testimonials {
-
+    margin-left: auto;
+    color: rgba($mainColor, 50%);
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  &__testimonials span {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
   }
 }
